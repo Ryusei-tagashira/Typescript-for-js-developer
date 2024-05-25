@@ -4,6 +4,7 @@ const reducer = (accumulator: number, currentValue: number) => {
   console.log({accumulator, currentValue});
   return accumulator + currentValue;
 };
+
 const sum: (...values: number[]) => number = (...values: number[]): number => {
   console.log(values);
   return values.reduce(reducer);

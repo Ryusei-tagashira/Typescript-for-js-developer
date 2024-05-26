@@ -1,7 +1,11 @@
 export {};
 
 class VisaCard {
-  constructor(public readonly owner: string) {
+  // publicであることは自明のため書かなくて良い
+  // constructor(public readonly owner: string) {
+  //   this.owner = owner;
+  // }
+  constructor(readonly owner: string) {
     this.owner = owner;
   }
 }
